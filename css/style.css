@@ -1,7 +1,30 @@
+.box h3{
+	font-size: 1rem;
+}
+
+.mb-bottom{
+	margin-bottom: 1.5rem;
+}
+
 .box {
+	height: 3rem;
 	background-color: #006cfa;
 	border: 1px solid white;
 	line-height: 3rem;
 	color: white;
 	text-align: center;
+}
+
+.box.nested-father{
+	display: flex; /* I figli saranno disposti in flex */
+	height: auto; /* Sovrascrivo la regola precedente, lascio gestire l'altezza dal contenuto */
+	padding: 1rem;
+}
+
+.nested{
+	color: white;
+	line-height: 3rem;
+	text-align: center;
+	background-color: #01e165;
+	border: 1px solid #006cfa;
 }
